@@ -44,4 +44,41 @@ nav {
     text-decoration: none;
     color: #707070;
       font-weight: 600;
+        padding: 10px;
+      transition: 0.5s;
+}
+.nav-items li a:hover{
+  background-color: #FEEAE9;
+  color: black;
+  border-radius: 10px;
+}
+
+/* banner design */
+.banner{
+  background-color:#FEEAE9 ;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+}
+
+.banner img{
+  width: 420px;
+  height: 378px;
+}
+
+.banner h2{
+color: rgb(31, 31, 31);
+font-size: 56px;
+font-weight: 700;
+}
+
+.banner p{
+  color: rgb(78, 78, 78);
+font-weight: 400;
+}
+.banner-price{
+ color: rgb(255, 19, 111);
+ font-size: 52px;
+ font-weight: bold;
 }
