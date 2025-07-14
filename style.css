@@ -35,6 +35,8 @@
   font-weight: 500;
 }
 /* navbar */
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -93,6 +95,46 @@ nav img:hover {
   color: black;
   border-radius: 10px;
 }
+/* nav dropdown styles starts */
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items li {
+  position: relative;
+}
+
+.drop-down {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: white;
+  list-style: none;
+text-align: center;
+  width: 150px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.123);
+visibility: hidden;
+}
+
+.drop-down li {
+  padding: 10px;
+  border-bottom: 1px solid #00000033;
+
+  cursor: pointer;
+}
+
+.nav-items li:hover .drop-down {
+visibility: visible;
+   top: 30px;
+   transition: 0.3s;
+}
+.drop-down li:hover{
+  background-color: pink;
+}
+/* nav dropdown styles ends */
+
 
 /* banner design */
 .banner {
@@ -176,6 +218,7 @@ background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248)
 }
 .shoe-title p{
   color: tomato;
+  cursor: pointer;
 }
 .shoes-section{
   display: flex;
@@ -207,3 +250,39 @@ background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248)
   background: black;
 }
 
+
+/* footer */
+footer{
+width: 1412px;
+height: 455px;
+  background-color: #FFF2F1;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  margin: 100px auto;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  
+
+}
+footer h2{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+footer input{
+  width: 526px;
+  padding: 14px 20px;
+  outline:none;
+  border: white;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+footer .panda-btn{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
