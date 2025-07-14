@@ -1,84 +1,209 @@
+/* commom css */
 * {
   margin: 0;
   padding: 0;
-box-sizing: border-box;   /* by default content box thake*/
-} 
-.container{
-    max-width: 1280px;
-    margin: auto;
+  box-sizing: border-box; /* by default content box thake*/
+  font-family: "poppins",sans-serif;
 }
-
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+.panda-btn {
+  border-radius: 6px;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 88, 155) -0.006%,
+    rgb(255, 19, 111) 99.994%
+  );
+  padding: 15px 35px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.8s;
+}
+.panda-btn:hover {
+  border-radius: 6px;
+  background: linear-gradient(
+    270deg,
+    rgb(241, 29, 114) -0.006%,
+    rgb(204, 141, 165) 99.994%
+  );
+  padding: 15px 35px;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+/* navbar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
-.search-parent{
-    position: relative;
+nav img {
+  transition: 0.5s;
+}
+nav img:hover {
+  animation: rotateImage 1s;
+}
+@keyframes rotateImage {
+  0% {
+    transform: rotate3d(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.search-parent {
+  position: relative;
 }
 .search-parent input {
   border-radius: 66px;
-  padding:15px  30px;
+  padding: 15px 30px;
   width: 500px;
   background-color: rgb(229, 229, 229);
   border: 0;
 }
-.search-parent i{
-    position: absolute;
- top: 15px;
- right: 16px;
- color: #BABABA;
- 
-
+.search-parent i {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  color: #bababa;
 }
 
-.nav-items{
-    display: flex;
-    list-style: none;
-    gap: 10px;
-  
-    font-size: 16px;
-   
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+
+  font-size: 16px;
 }
-.nav-items li a{
-    text-decoration: none;
-    color: #707070;
-      font-weight: 600;
-        padding: 10px;
-      transition: 0.5s;
+.nav-items li a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.5s;
 }
-.nav-items li a:hover{
-  background-color: #FEEAE9;
+
+.nav-items li a:hover {
+  background-color: #feeae9;
   color: black;
   border-radius: 10px;
 }
 
 /* banner design */
-.banner{
-  background-color:#FEEAE9 ;
+.banner {
+  background-color: #feeae9;
   display: flex;
   justify-content: space-between;
   gap: 5px;
   align-items: center;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 25px;
 }
 
-.banner img{
+.banner img {
   width: 420px;
   height: 378px;
 }
 
-.banner h2{
-color: rgb(31, 31, 31);
-font-size: 56px;
-font-weight: 700;
+.banner h2 {
+  color: rgb(31, 31, 31);
+  font-size: 56px;
+  font-weight: 700;
 }
 
-.banner p{
+.banner p {
   color: rgb(78, 78, 78);
-font-weight: 400;
+  font-weight: 400;
+  max-width: 456px;
 }
-.banner-price{
- color: rgb(255, 19, 111);
- font-size: 52px;
- font-weight: bold;
+.banner-price {
+  color: rgb(255, 19, 111);
+  font-size: 52px;
+  font-weight: bold;
+  display: block;
 }
+
+/* catagory */
+.catagories{
+margin-top: 50px;
+}
+.catagories h2{
+  font-size: 40px;
+  margin:20px 0;
+}
+.catagories-card-container{
+  display: flex;
+  gap: 20px;
+
+}
+.catagory-card{
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px;
+ border-radius: 20px;
+ flex: 1;
+}
+.catagory-card h3{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.catagory-card:first-child{
+ background: linear-gradient(151.85deg, rgb(255, 156, 53) 14.537%,rgb(255, 208, 25) 84.486%);
+}
+.catagory-card:nth-child(2){
+
+background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);
+}
+.catagory-card:last-child{
+background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
+}
+
+/* shoes and bag */
+.shoe-title{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.shoe-title p{
+  color: tomato;
+}
+.shoes-section{
+  display: flex;
+  justify-content: space-between;
+}
+.shoes-section h2{
+  margin-bottom: 20px;
+}
+.shoe-card{
+  background-color: rgb(240, 229, 229);
+  width: 360px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+
+}
+.shoe-card img{
+  width: 80%;
+}
+
+.shoe-card span{
+  display: block;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.shoe-card .panda-btn{
+  background: black;
+}
+
